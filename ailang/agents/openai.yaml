@@ -1,0 +1,6 @@
+interface:
+  display_name: "AiLang"
+  short_description: "Create and maintain AiLang projects"
+  default_prompt: "Use $ailang to create a new AiLang project, install the SDK if needed, run it, and explain the generated files."
+policy:
+  allow_implicit_invocation: true
