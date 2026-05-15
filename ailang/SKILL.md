@@ -52,6 +52,10 @@ ailang --version
 ailang help
 ailang template list
 ailang agent list
+ailang package list
+ailang package add <name>[@<version>]
+ailang package restore
+ailang package remove <name>
 ailang init MyApp --agent codex
 ailang init MyApp --agents codex,claude
 ailang run MyApp
@@ -59,6 +63,33 @@ ailang build MyApp
 ailang publish MyApp --out dist
 ailang clean MyApp
 ```
+
+## Packages
+
+Use packages when the project needs an optional library, tool, or template.
+Packages are declared in `project.aiproj`, restored into `.ailang/packages`,
+and pinned in `ailang.lock.toml`.
+
+Common package flow:
+
+```bash
+ailang package list
+ailang package add <package-name>
+ailang package restore
+ailang build .
+ailang run .
+```
+
+Package imports use the package name and the source path inside that package:
+
+```aos
+Import#i1(package="aivectra" path="src/AiVectra.aos")
+```
+
+Package tools are available as `ailang <tool> ...` after restore. Command
+resolution is built-in command first, then globally installed tool, then local
+package tool. If a package tool conflicts with an existing command, restore or
+add should fail; report the conflict instead of trying to rename or shim it.
 
 ## Toolchain Selection
 

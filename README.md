@@ -1,6 +1,7 @@
 # AiLang Codex Skill
 
-Codex skill for creating, running, building, and publishing AiLang projects.
+Codex skill for creating, running, building, publishing, and maintaining
+AiLang projects, including package restore and package tool workflows.
 
 Install locally:
 
