@@ -1,6 +1,6 @@
 ---
 name: ailang
-description: Create, inspect, build, run, publish, and maintain AiLang projects. Use when Codex is asked to install AiLang, create a new AiLang project, initialize a Codex-ready AiLang app, work inside an AiLang project, use AiVM or AiVectra from AiLang, select an AiLang SDK/toolchain, or prepare AiLang project output for local development or alpha release.
+description: Create, inspect, build, run, publish, and maintain AiLang projects. Use when Codex is asked to install AiLang, create a new AiLang project, initialize a Codex-ready AiLang app, work inside an AiLang project, use AiVM or AiVectra from AiLang, select an AiLang SDK/toolchain, or prepare AiLang project output for local development or beta release.
 ---
 
 # AiLang
@@ -14,7 +14,7 @@ When asked to create a new AiLang project:
    command -v ailang
    ailang --version
    ```
-2. If missing, install the public alpha SDK:
+2. If missing, install the public beta SDK:
    ```bash
    curl -fsSL https://ailang.codes/install.sh | sh
    export PATH="$HOME/.ailang/bin:$PATH"
