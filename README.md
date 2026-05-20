@@ -9,6 +9,10 @@ This repository owns the Codex-facing AiLang skill. It teaches Codex the public
 SDK install, `ailang init`, package restore, build, run, publish, and debug
 workflow commands.
 
+This repository uses `main` as its public default branch. It publishes agent
+workflow guidance only; language, VM, UI, package, and release artifacts are
+owned by their dedicated repositories.
+
 Use this with the public AiLangCore SDK:
 
 ```bash
@@ -53,3 +57,4 @@ Project sources:
 - [AiVM](https://github.com/AiLangCore/AiVM)
 - [AiVectra](https://github.com/AiLangCore/AiVectra)
 - [Public website](https://ailang.codes/)
+- [AiLangCore roadmap](https://ailang.codes/docs/roadmap.html)
